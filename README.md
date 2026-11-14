@@ -10,7 +10,7 @@ Fritzing. Fritzing is free software (GPL v3), which is what allows this build to
 ## Download and install
 
 1. Download `Fritzing-1.0.7-unofficial-win64.zip` from the
-   [latest release](../../releases/latest) (114 MB).
+   [latest release](../../releases/latest) (117 MB).
 2. Unzip the whole folder somewhere you keep programs, for example
    `C:\Users\<your name>\Fritzing`. Keep every file together in that folder.
 3. Open the folder and double-click `Fritzing.exe`.
@@ -20,7 +20,7 @@ Fritzing. Fritzing is free software (GPL v3), which is what allows this build to
 The first start takes about 10–20 seconds while Fritzing loads its parts.
 
 SHA-256 of the zip:
-`5cdaf08a74c20dc6d557fc3f8674b7accda1e4adb32f2be60fbc67fa9d4d0934`
+`36b322909aa02e2f171bd86e0b72e88559d3bc557a97c13ca161eed9fd4d1b6a`
 
 ## macOS (Apple Silicon: M1 and later)
 
