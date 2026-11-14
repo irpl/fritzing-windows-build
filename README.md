@@ -22,6 +22,27 @@ The first start takes about 10–20 seconds while Fritzing loads its parts.
 SHA-256 of the zip:
 `5cdaf08a74c20dc6d557fc3f8674b7accda1e4adb32f2be60fbc67fa9d4d0934`
 
+## macOS (Apple Silicon: M1 and later)
+
+Needs macOS 12 Monterey or later on an Apple Silicon Mac. It does not run on Intel Macs.
+
+1. Download `Fritzing-1.0.7-unofficial-macos-arm64.dmg` from the
+   [latest release](../../releases/latest) (187 MB).
+2. Open the dmg and drag **Fritzing** onto **Applications**.
+3. Open Fritzing from Applications. macOS blocks it the first time, because the build is
+   not notarised by Apple. Click **Done** (or **OK**).
+4. Open **System Settings → Privacy & Security**, scroll down to the message about Fritzing,
+   click **Open Anyway**, and confirm with your password or Touch ID.
+
+You only need to do this once. The first start takes a little while as Fritzing loads its parts.
+
+SHA-256 of the dmg:
+`c83b4dea0df0af2e8ad7f8d410183074d314ba21b9675c4260c49e9754d73298`
+
+The macOS build uses the same Fritzing, parts and library versions as the Windows build below,
+built with Apple clang 17 (Xcode 26.2) against Qt 6.8.3 `clang_64`. ngspice 42 was built from
+its source release for macOS 12+. Scripts: `build-scripts/build-mac.sh` and `package-mac.sh`.
+
 ## Source
 
 No changes were made to the Fritzing source code. This build was made from:

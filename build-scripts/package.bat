@@ -27,6 +27,8 @@ xcopy /E /I /Y /Q %B%\fritzing-app\sketches %D%\sketches >nul
 xcopy /E /I /Y /Q %B%\fritzing-app\help %D%\help >nul
 if not exist %D%\translations mkdir %D%\translations
 for %%f in (%B%\fritzing-app\translations\*.ts) do lrelease -silent %%f -qm %D%\translations\%%~nf.qm
+rem Code editor syntax highlighting (Arduino, PICAXE) is read from translations\syntax.
+xcopy /E /I /Y /Q %B%\fritzing-app\translations\syntax %D%\translations\syntax >nul || exit /b 5
 robocopy %B%\dist-parts %D%\fritzing-parts /E /XD .git /NFL /NDL /NJH /NJS >nul
 
 echo ===== licences
